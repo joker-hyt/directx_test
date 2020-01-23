@@ -1,6 +1,10 @@
-#include "../stdafx.h"
+#include "stdafx.h"
 #include "d3dUtility.h"
-#include "../Resource.h"
+#include "Resource.h"
+
+HINSTANCE hInst;								// 当前实例
+TCHAR szTitle[MAX_LOADSTRING];				// 标题栏文本
+TCHAR szWindowClass[MAX_LOADSTRING];			// 主窗口类名
 
 BOOL d3d::InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
@@ -83,10 +87,6 @@ LRESULT CALLBACK d3d::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 bool d3d::InitD3D(HINSTANCE hInstance, int width, int height, bool windowed, int nCmdShow, D3DDEVTYPE deviceType, IDirect3DDevice9** device)
 {
- 	// TODO: 在此放置代码。
-	MSG msg;
-	HACCEL hAccelTable;
-
 	// 初始化全局字符串
 	LoadString(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
 	LoadString(hInstance, IDC_INIT, szWindowClass, MAX_LOADSTRING);

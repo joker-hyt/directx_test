@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include "init.h"
-#include "init/d3dUtility.h"
+#include "d3dUtility.h"
 
 IDirect3DDevice9* device;
 
 bool Setup()
 {
-	return false;
+	return true;
 }
 
 void Cleanup()

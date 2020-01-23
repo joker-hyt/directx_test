@@ -4,11 +4,6 @@
 
 namespace d3d
 {
-	// 全局变量:
-	HINSTANCE hInst;								// 当前实例
-	TCHAR szTitle[MAX_LOADSTRING];					// 标题栏文本
-	TCHAR szWindowClass[MAX_LOADSTRING];			// 主窗口类名
-
 	BOOL InitInstance(HINSTANCE hInstance, int nCmdShow);
 	ATOM MyRegisterClass(HINSTANCE hInstance);
 	bool InitD3D(HINSTANCE hInstance, int width, int height, bool windowed, int nCmdShow, D3DDEVTYPE deviceType, IDirect3DDevice9** device);

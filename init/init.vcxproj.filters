@@ -39,7 +39,7 @@
     <ClInclude Include="init.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="init\d3dUtility.h">
+    <ClInclude Include="d3dUtility.h">
       <Filter>init</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,7 +50,7 @@
     <ClCompile Include="init.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="init\d3dUtility.cpp">
+    <ClCompile Include="d3dUtility.cpp">
       <Filter>init</Filter>
     </ClCompile>
   </ItemGroup>
