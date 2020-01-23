@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8ABB00CA-883F-4A51-B498-FE3B6ACD5F75}</ProjectGuid>
+    <ProjectGuid>{F60A809D-04D1-4799-A841-124BC823238D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>directx_test</RootNamespace>
+    <RootNamespace>init</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -39,7 +39,6 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <EmbedManifest>true</EmbedManifest>
     <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28August 2007%29\Include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28August 2007%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -76,25 +75,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="directx_test.ico" />
+    <None Include="init.ico" />
     <None Include="ReadMe.txt" />
     <None Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="directx_test.h" />
+    <ClInclude Include="init.h" />
+    <ClInclude Include="init\d3dUtility.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="directx_test.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="init\d3dUtility.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="directx_test.rc" />
+    <ResourceCompile Include="init.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
