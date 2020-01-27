@@ -1,7 +1,7 @@
 #include <d3dx9.h>
 
 #define MAX_LOADSTRING 100
-
+extern IDirect3DDevice9* device;
 namespace d3d
 {
 	BOOL InitInstance(HINSTANCE hInstance, int nCmdShow);
