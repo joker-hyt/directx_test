@@ -86,6 +86,7 @@ bool Setup()
 	device->SetRenderState(D3DRS_NORMALIZENORMALS, true);
 	device->SetRenderState(D3DRS_SPECULARENABLE, true);
 	device->SetRenderState(D3DRS_LIGHTING, true);
+	//device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
 	//device->SetRenderState(D3DRS_SHADEMODE, D3DSHADE_GOURAUD);
 	//device->SetRenderState(D3DRS_SHADEMODE, D3DSHADE_FLAT);
 	//device->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);

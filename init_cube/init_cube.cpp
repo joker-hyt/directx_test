@@ -110,7 +110,7 @@ bool Display(float timeDelta)
 			y = 0.0f;
 		}
 
-		D3DXMATRIX p = rx * ry;
+		D3DXMATRIX p = ry;//rx * ry;
 		device->SetTransform(D3DTS_WORLD, &p);
 
 		device->Clear(0, 0, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, 0xFFFFFFFF, 1.0f, 0);
