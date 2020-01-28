@@ -3,7 +3,6 @@
 #include "d3dUtility.h"
 
 IDirect3DDevice9* device;
-ID3DXMesh* mesh;
 IDirect3DVertexBuffer9* vb;
 IDirect3DIndexBuffer9* ib;
 
@@ -18,9 +17,17 @@ struct Vertex
 	static const DWORD FVF;
 };
 
+struct ColorVertex
+{
+	float x, y, z;
+	D3DXCOLOR color;
+	static const DWORD FVF;
+};
+
 const DWORD Vertex::FVF = D3DFVF_XYZ;
-const float Width = 100.0f;
-const float Height = 80.0f;
+const DWORD ColorVertex::FVF = D3DFVF_XYZ | D3DFVF_DIFFUSE;
+const float Width = 800.0f;
+const float Height = 600.0f;
 
 bool Setup()
 {
