@@ -86,6 +86,9 @@ bool Setup()
 	device->SetRenderState(D3DRS_NORMALIZENORMALS, true);
 	device->SetRenderState(D3DRS_SPECULARENABLE, true);
 	device->SetRenderState(D3DRS_LIGHTING, true);
+	//device->SetRenderState(D3DRS_SHADEMODE, D3DSHADE_GOURAUD);
+	//device->SetRenderState(D3DRS_SHADEMODE, D3DSHADE_FLAT);
+	//device->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);
 	
 	D3DXVECTOR3 position(0.0f, 0.0f, -5.0f);
 	D3DXVECTOR3	target(0.0f, 0.0f, 0.0f);
