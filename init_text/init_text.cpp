@@ -88,13 +88,13 @@ bool Setup()
 	//device->SetRenderState(D3DRS_SHADEMODE, D3DSHADE_FLAT);
 	//device->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);
 	
-	//D3DXVECTOR3 position(0.0f, 0.0f, -5.0f);
-	//D3DXVECTOR3	target(0.0f, 0.0f, 0.0f);
-	//D3DXVECTOR3 up(0.0f, 1.0f, 0.0f);
+	D3DXVECTOR3 position(0.0f, 0.0f, -1.0f);
+	D3DXVECTOR3	target(0.0f, 0.0f, 0.0f);
+	D3DXVECTOR3 up(0.0f, 1.0f, 0.0f);
 
-	//D3DXMATRIX v;
-	//D3DXMatrixLookAtLH(&v, &position, &target, &up);
-	//device->SetTransform(D3DTS_VIEW, &v);
+	D3DXMATRIX v;
+	D3DXMatrixLookAtLH(&v, &position, &target, &up);
+	device->SetTransform(D3DTS_VIEW, &v);
 
 	D3DXMATRIX proj;
 	D3DXMatrixPerspectiveFovLH(&proj, D3DX_PI * 0.5f, Width / Height, 1.0f, 1000.0f);
@@ -126,7 +126,7 @@ bool Display(float timeDelta)
 		}
 
 		D3DXMATRIX p = ry;//rx * ry;
-		//device->SetTransform(D3DTS_WORLD, &p);
+		device->SetTransform(D3DTS_WORLD, &p);
 
 		device->Clear(0, 0, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, 0xFFFFFFFF, 1.0f, 0);
 		device->BeginScene();
