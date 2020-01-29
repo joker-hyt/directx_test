@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_light", "init_light\in
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_text", "init_text\init_text.vcxproj", "{9B62A087-E63E-449B-955C-6C0677097295}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_mix", "init_mix\init_mix.vcxproj", "{E4E853FB-F19B-4D52-9051-786C72FD2033}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{9B62A087-E63E-449B-955C-6C0677097295}.Debug|Win32.Build.0 = Debug|Win32
 		{9B62A087-E63E-449B-955C-6C0677097295}.Release|Win32.ActiveCfg = Release|Win32
 		{9B62A087-E63E-449B-955C-6C0677097295}.Release|Win32.Build.0 = Release|Win32
+		{E4E853FB-F19B-4D52-9051-786C72FD2033}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4E853FB-F19B-4D52-9051-786C72FD2033}.Debug|Win32.Build.0 = Debug|Win32
+		{E4E853FB-F19B-4D52-9051-786C72FD2033}.Release|Win32.ActiveCfg = Release|Win32
+		{E4E853FB-F19B-4D52-9051-786C72FD2033}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
