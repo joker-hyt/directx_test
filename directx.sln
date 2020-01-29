@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_color", "init_color\in
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_light", "init_light\init_light.vcxproj", "{3C925C71-ECB9-4A67-B83D-D95C704A2FD7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_text", "init_text\init_text.vcxproj", "{9B62A087-E63E-449B-955C-6C0677097295}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -37,6 +39,10 @@ Global
 		{3C925C71-ECB9-4A67-B83D-D95C704A2FD7}.Debug|Win32.Build.0 = Debug|Win32
 		{3C925C71-ECB9-4A67-B83D-D95C704A2FD7}.Release|Win32.ActiveCfg = Release|Win32
 		{3C925C71-ECB9-4A67-B83D-D95C704A2FD7}.Release|Win32.Build.0 = Release|Win32
+		{9B62A087-E63E-449B-955C-6C0677097295}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B62A087-E63E-449B-955C-6C0677097295}.Debug|Win32.Build.0 = Debug|Win32
+		{9B62A087-E63E-449B-955C-6C0677097295}.Release|Win32.ActiveCfg = Release|Win32
+		{9B62A087-E63E-449B-955C-6C0677097295}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
