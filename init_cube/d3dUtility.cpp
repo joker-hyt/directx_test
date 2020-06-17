@@ -8,18 +8,18 @@ TCHAR szWindowClass[MAX_LOADSTRING];			// 主窗口类名
 
 BOOL d3d::InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
-   HWND hWnd;
+	HWND hWnd;
 
-   hInst = hInstance; // 将实例句柄存储在全局变量中
+	hInst = hInstance; // 将实例句柄存储在全局变量中
 
-   hWnd = CreateWindow(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, hInstance, NULL);
+	hWnd = CreateWindow(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, hInstance, NULL);
 
-   if (!hWnd)
-   {
-      return FALSE;
-   }
-   
+	if (!hWnd)
+	{
+		return FALSE;
+	}
+
 	IDirect3D9* d3d9 = Direct3DCreate9(D3D_SDK_VERSION);
 	D3DCAPS9 caps;
 	d3d9->GetDeviceCaps(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, &caps);
@@ -53,10 +53,10 @@ BOOL d3d::InitInstance(HINSTANCE hInstance, int nCmdShow)
 		MessageBox(hWnd, _T("Create Device Failed"), 0, 0);
 	}
 
-   ShowWindow(hWnd, nCmdShow);
-   UpdateWindow(hWnd);
+	ShowWindow(hWnd, nCmdShow);
+	UpdateWindow(hWnd);
 
-   return TRUE;
+	return TRUE;
 }
 
 ATOM d3d::MyRegisterClass(HINSTANCE hInstance)
