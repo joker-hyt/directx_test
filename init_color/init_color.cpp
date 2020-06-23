@@ -20,12 +20,12 @@ struct Vertex
 struct ColorVertex
 {
 	ColorVertex() {}
-	ColorVertex(float _x, float _y, float _z, D3DXCOLOR _color)
+	ColorVertex(float _x, float _y, float _z, D3DCOLOR _color)
 		: x(_x), y(_y), z(_z), color(_color)
 	{}
 
 	float x, y, z;
-	D3DXCOLOR color;
+	D3DCOLOR color;
 	static const DWORD FVF;
 };
 
